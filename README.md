@@ -30,7 +30,7 @@ php -S 127.0.0.1:8080 -t web/
 http://127.0.0.1:8080
 ```
 
-To deactivate outdated card, run 
+Для деактивации просроченных карт запустите:
 ```
 ./yii card/outdate
 ```
