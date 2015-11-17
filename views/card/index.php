@@ -49,15 +49,15 @@ $this->registerJs($js);
                 'dateFormat' => 'yyyy-MM-dd',
             ])
         ],
-        [
-            'attribute' => 'begin_date',
-            'filter' => DatePicker::widget([
-                'model' => $searchModel,
-                'attribute' => 'begin_date',
-                'options' => ['class' => 'form-control'],
-                'dateFormat' => 'yyyy-MM-dd',
-            ])
-        ],
+//        [
+//            'attribute' => 'begin_date',
+//            'filter' => DatePicker::widget([
+//                'model' => $searchModel,
+//                'attribute' => 'begin_date',
+//                'options' => ['class' => 'form-control'],
+//                'dateFormat' => 'yyyy-MM-dd',
+//            ])
+//        ],
         [
             'attribute' => 'end_date',
             'filter' => DatePicker::widget([
@@ -67,16 +67,16 @@ $this->registerJs($js);
                 'dateFormat' => 'yyyy-MM-dd',
             ])
         ],
-        [
-            'attribute' => 'serialDuration',
-            'format' => 'raw',
-            'value' => 'serial.durationText',
-            'filter' => Html::activeDropDownList($searchModel, 'serialDuration', Serial::getDurations(), [
-                'class'=>'form-control',
-                'prompt' => ''
-            ]),
-            'label' => 'Срок активности',
-        ],
+//        [
+//            'attribute' => 'serialDuration',
+//            'format' => 'raw',
+//            'value' => 'serial.durationText',
+//            'filter' => Html::activeDropDownList($searchModel, 'serialDuration', Serial::getDurations(), [
+//                'class'=>'form-control',
+//                'prompt' => ''
+//            ]),
+//            'label' => 'Срок активности',
+//        ],
         [
             'attribute' => 'status',
             'format' => 'raw',
@@ -91,7 +91,7 @@ $this->registerJs($js);
         [
             'class' => \yii\grid\ActionColumn::class,
             'header'=>'Действия',
-            'headerOptions' => ['width' => '70'],
+            'headerOptions' => ['width' => '150'],
             'template' => '{view} {delete}',
             'buttons' => [
                 'delete' => function ($url, $model) {

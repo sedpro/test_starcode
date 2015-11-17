@@ -80,3 +80,7 @@ a.desc:after {
 .card-view > div{
     margin-top:10px;
 }
+
+.card-delete{
+    cursor: pointer;
+}
